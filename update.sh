@@ -1,7 +1,6 @@
-git pull --rebase origin master
-if [ $? == 0 ];then
+if [ $? == 1 ];then
         echo "git pull success"
     else
             echo "git pull failed"
-                return 1
+                exit 1
             fi
